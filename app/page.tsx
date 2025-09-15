@@ -4,32 +4,48 @@ import { ThemeSwitcher } from "@/components/theme-switcher";
 import { hasEnvVars } from "@/lib/utils";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+
 import { FeatureCardsSection } from "../components/feature-cards-section";
-import { LogoPNG } from "@/app/components/im/LogoPNG";
 
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center">
       <div className="flex-1 w-full flex flex-col gap-20 items-center">
-        <nav className="w-full flex justify-center border-b border-b-foreground/10 bg-[#001f3f] text-white h-16">
+        <nav className="w-full flex justify-center border-b border-b-foreground/10 bg-[#000214] text-white h-16">
           <div className="w-full max-w-5xl flex items-center p-3 px-5 text-sm">
             <div className="flex gap-3 items-center font-semibold text-xl">
-              <LogoPNG className="h-12 w-12" />
+              <img
+                src="https://ekfzpyeidnedjyctkkxs.supabase.co/storage/v1/object/sign/Archivos/logo.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV84MTQ0OTUyYS0xMzA4LTRkMmItOWYwOC0zNTEwYzYyMGM1M2YiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJBcmNoaXZvcy9sb2dvLnBuZyIsImlhdCI6MTc1Nzk2ODk4MywiZXhwIjoxNzg5NTA0OTgzfQ.4aNjRS6W6EgVHy7VFflFIFIqSXJfoKbmIJ5zy6EzoWc"
+                alt="Logo personalizado"
+                className="h-10 w-15 mr-2"
+              />
               <Link href={"/"}>Match Study</Link>
             </div>
             <div className="flex gap-2 ml-auto text-base">
               <Link href="/features">
-                <Button variant="outline" size="sm" className="bg-white text-black border-gray-300 hover:bg-gray-100">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="bg-white text-black border-gray-300 hover:bg-gray-100"
+                >
                   Características
                 </Button>
               </Link>
               <Link href="/about">
-                <Button variant="outline" size="sm" className="bg-white text-black border-gray-300 hover:bg-gray-100">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="bg-white text-black border-gray-300 hover:bg-gray-100"
+                >
                   Acerca de
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button variant="outline" size="sm" className="bg-white text-black border-gray-300 hover:bg-gray-100">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="bg-white text-black border-gray-300 hover:bg-gray-100"
+                >
                   Contacto
                 </Button>
               </Link>
@@ -57,7 +73,7 @@ export default function Home() {
           <FeatureCardsSection />
         </div>
 
-        <footer className="w-full flex items-center justify-center border-t mx-auto text-center text-xs gap-8 bg-[#001f3f] text-white">
+        <footer className="w-full flex items-center justify-center border-t mx-auto text-center text-xs gap-8 bg-[#000214] text-white">
           <p>2025 Match Study. Todos los derechos reservados</p>
           <ThemeSwitcher />
         </footer>
